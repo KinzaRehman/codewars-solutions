@@ -4,6 +4,7 @@ const stringToNumber = function(str){
   return Number(str);
 }
 
+
 const Test = require('@codewars/test-compat');
 
 describe( "stringToNumber", function(){
