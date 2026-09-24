@@ -19,3 +19,4 @@ var number = function(busStops){
   return riders.reduce((sum, ride) => sum + ride, 0)
   
 }
+
