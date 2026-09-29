@@ -54,3 +54,63 @@ function findNeedle(haystack) {
   // your code here
   return "found the needle at position " + haystack.indexOf("needle")
 }
+
+/*
+Bob needs a fast way to calculate the volume of a rectangular cuboid with three values: the length, width and height of the cuboid.
+
+Write a function to help Bob with this calculation. */
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length * width * height
+  }
+}
+
+
+
+/* A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+Return true if yes, false otherwise :) */ 
+
+function hero(bullets, dragons){
+//Get Coding!
+  return bullets / 2 >= dragons
+}
+
+
+/* Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+Names given are always valid strings. */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+Fundamentals8*/
+
+function findShort(s) {
+  let small = s.split(" ");
+
+  let est = small.reduce((shortest, current) => {
+    return current.length > shortest.length ? shortest : current;
+  });
+
+  return est.length;
+}
