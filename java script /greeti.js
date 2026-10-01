@@ -47,7 +47,7 @@ Example:
 
 Not Jaden-Cased: "How can mirrors be real if our eyes aren't real"
 Jaden-Cased:     "How Can Mirrors Be Real If Our Eyes Aren't Real" */ 
-
+//solution 1 
 Object.defineProperty(
   String.prototype,
   'toJadenCase',
@@ -61,3 +61,8 @@ Object.defineProperty(
     }
   }
 );
+
+//solution 2 
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')
+};
