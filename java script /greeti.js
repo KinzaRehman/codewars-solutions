@@ -87,3 +87,23 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
 //solution 2
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => distanceToPump <= mpg * fuelLeft;
+
+/*In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+*/
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  //console.log(l)
+  
+  //the lsit is in an array
+  //we need to take integers only 
+  //we return the filtered lsit and non negative integers 
+  
+  
+  return l.filter( x => typeof x === "number")
+  
+}
