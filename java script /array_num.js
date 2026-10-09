@@ -138,3 +138,22 @@ function greet(name){
   return(`Hello, ${name} how are you doing today?`)
 }
 
+
+
+/*
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.*/
+function findSmallestInt(arr) {
+  //your code here
+  return Math.min(...arr);
+}
+
+//parameters: it needs to take in a arr which is there and return the smalllest int
+//rreturn: return smallest number 
+//example: [10,20,20,30, 1,20,20] -> 1 
+/*pseudo code: 
