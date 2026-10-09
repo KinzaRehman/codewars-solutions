@@ -157,3 +157,4 @@ function findSmallestInt(arr) {
 //rreturn: return smallest number 
 //example: [10,20,20,30, 1,20,20] -> 1 
 /*pseudo code: 
+*/
