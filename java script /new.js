@@ -38,3 +38,5 @@ let repeatString = splitting[i].repeat
 }
 
 }
+
+*/
